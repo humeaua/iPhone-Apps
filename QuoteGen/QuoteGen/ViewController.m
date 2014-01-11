@@ -55,7 +55,7 @@
     NSString *my_film = self.movieQuotes[index][@"source"];
     NSString *my_category = self.movieQuotes[index][@"category"];
     // 4 - Display the quote in the text view
-    self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n ""%@"" \n\n Film : %@ \n\n Category : %@",  my_quote, my_film, my_category];
+    self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n \"%@\" \n\n Film : %@ \n\n Category : %@",  my_quote, my_film, my_category];
 }
 
 @end
