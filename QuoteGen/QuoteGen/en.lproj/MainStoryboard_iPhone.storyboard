@@ -25,22 +25,21 @@
                                     <action selector="quoteButtonTapped:" destination="2" eventType="touchUpInside" id="neu-A9-f8V"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-ac-iTU">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Welcome in my new application" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-ac-iTU">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="KPP-fC-qE5"/>
-                                    <constraint firstAttribute="height" constant="187" id="oip-k7-PjY"/>
+                                    <constraint firstAttribute="height" constant="187" id="rb5-OU-4Xp"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QDN-ac-iTU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="11" id="2Yo-TA-AQQ"/>
-                            <constraint firstItem="4EG-QI-0Eh" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="AXP-yX-SxZ"/>
-                            <constraint firstItem="QDN-ac-iTU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="28" id="Kjq-c7-OhJ"/>
+                            <constraint firstItem="QDN-ac-iTU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" id="4k1-Tj-4tV"/>
+                            <constraint firstItem="QDN-ac-iTU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="631-Cu-WS0"/>
+                            <constraint firstAttribute="trailing" secondItem="QDN-ac-iTU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cHZ-gc-5H2"/>
+                            <constraint firstItem="QDN-ac-iTU" firstAttribute="centerX" secondItem="4EG-QI-0Eh" secondAttribute="centerX" type="default" id="h2t-ij-4FO"/>
                             <constraint firstAttribute="bottom" secondItem="4EG-QI-0Eh" secondAttribute="bottom" constant="185" id="xxK-Q2-SoD"/>
                         </constraints>
                     </view>
