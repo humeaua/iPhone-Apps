@@ -24,6 +24,7 @@
 		4FFC01A2188182A300E6ADE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFC017A188182A300E6ADE9 /* Foundation.framework */; };
 		4FFC01AA188182A300E6ADE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC01A8188182A300E6ADE9 /* InfoPlist.strings */; };
 		4FFC01AD188182A300E6ADE9 /* QuoteGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC01AC188182A300E6ADE9 /* QuoteGenTests.m */; };
+		4FFC01B71881B99500E6ADE9 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC01B61881B99500E6ADE9 /* quotes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		4FFC01A9188182A300E6ADE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4FFC01AB188182A300E6ADE9 /* QuoteGenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuoteGenTests.h; sourceTree = "<group>"; };
 		4FFC01AC188182A300E6ADE9 /* QuoteGenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuoteGenTests.m; sourceTree = "<group>"; };
+		4FFC01B61881B99500E6ADE9 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		4FFC017E188182A300E6ADE9 /* QuoteGen */ = {
 			isa = PBXGroup;
 			children = (
+				4FFC01B61881B99500E6ADE9 /* quotes.plist */,
 				4FFC0187188182A300E6ADE9 /* AppDelegate.h */,
 				4FFC0188188182A300E6ADE9 /* AppDelegate.m */,
 				4FFC0190188182A300E6ADE9 /* MainStoryboard_iPhone.storyboard */,
@@ -240,6 +243,7 @@
 				4FFC018F188182A300E6ADE9 /* Default-568h@2x.png in Resources */,
 				4FFC0192188182A300E6ADE9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4FFC0195188182A300E6ADE9 /* MainStoryboard_iPad.storyboard in Resources */,
+				4FFC01B71881B99500E6ADE9 /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
