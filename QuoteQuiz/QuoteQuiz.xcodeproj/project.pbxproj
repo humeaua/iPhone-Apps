@@ -20,6 +20,7 @@
 		4FB1BA861882F8E7001D0B5D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB1BA841882F8E7001D0B5D /* MainStoryboard_iPad.storyboard */; };
 		4FB1BA891882F8E7001D0B5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1BA881882F8E7001D0B5D /* ViewController.m */; };
 		4FB1BA911882FCAC001D0B5D /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1BA901882FCAC001D0B5D /* Quiz.m */; };
+		4FB1BA931882FEBF001D0B5D /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FB1BA921882FEBF001D0B5D /* quotes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4FB1BA881882F8E7001D0B5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4FB1BA8F1882FCAC001D0B5D /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		4FB1BA901882FCAC001D0B5D /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		4FB1BA921882FEBF001D0B5D /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				4FB1BA841882F8E7001D0B5D /* MainStoryboard_iPad.storyboard */,
 				4FB1BA871882F8E7001D0B5D /* ViewController.h */,
 				4FB1BA881882F8E7001D0B5D /* ViewController.m */,
+				4FB1BA921882FEBF001D0B5D /* quotes.plist */,
 				4FB1BA701882F8E7001D0B5D /* Supporting Files */,
 			);
 			path = QuoteQuiz;
@@ -172,6 +175,7 @@
 				4FB1BA801882F8E7001D0B5D /* Default-568h@2x.png in Resources */,
 				4FB1BA831882F8E7001D0B5D /* MainStoryboard_iPhone.storyboard in Resources */,
 				4FB1BA861882F8E7001D0B5D /* MainStoryboard_iPad.storyboard in Resources */,
+				4FB1BA931882FEBF001D0B5D /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
