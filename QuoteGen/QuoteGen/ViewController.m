@@ -34,12 +34,6 @@
     // 2 - Load movie quotes
     NSString *plistCatPath = [[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"plist"];
     self.movieQuotes= [NSMutableArray arrayWithContentsOfFile:plistCatPath];
-    
-    // 3 - Select quote opt
-    //NSArray *itemArray = [NSArray arrayWithObjects: @"Classic", @"Modern", @"Mine", nil];
-    //UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:itemArray];
-    //segmentedControl.selectedSegmentIndex = 2;
-    //self.quoteOpt = segmentedControl;
 }
 
 - (void)didReceiveMemoryWarning
