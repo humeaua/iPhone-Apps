@@ -48,38 +48,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)segmentedControlIndexChanged:(id)sender {
-    
-    NSLog(@"segmentedControlIndexChanged");
-    
-    switch (_quoteOpt.selectedSegmentIndex)
-    {
-        case 0:
-        {
-            NSLog(@"dateSegmentActive");
-        }
-            break;
-        case 1:
-        {
-            NSLog(@"noteSegmentActive");
-        }
-            break;
-        case 2:
-        {
-            NSLog(@"typeSegmentActive");
-        }
-            break;
-        case 3:
-        {
-            NSLog(@"userIDSegmentActive");
-        }
-            break;
-            
-        default:
-            break;
-    }
-}
-
 -(IBAction)quoteButtonTapped:(id)sender
 {
     // 1 - Get personal quotes when the final segment is selected

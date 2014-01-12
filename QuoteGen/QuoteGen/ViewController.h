@@ -19,6 +19,4 @@
 
 @property (nonatomic, strong) IBOutlet UISegmentedControl *quoteOpt;
 
-- (IBAction)segmentedControlIndexChanged:(id)sender;
-
 @end
