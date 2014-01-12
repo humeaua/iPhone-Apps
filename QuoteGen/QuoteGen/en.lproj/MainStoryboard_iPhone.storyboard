@@ -42,23 +42,21 @@
                                     <segment title="Modern"/>
                                     <segment title="Mine"/>
                                 </segments>
-                                <connections>
-                                    <action selector="segmentedControlIndexChanged:" destination="2" eventType="valueChanged" id="tr0-TO-tUK"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZCp-2l-fmO" secondAttribute="bottom" constant="91" id="1YK-H3-XZK"/>
                             <constraint firstItem="QDN-ac-iTU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" id="4k1-Tj-4tV"/>
                             <constraint firstItem="QDN-ac-iTU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="631-Cu-WS0"/>
-                            <constraint firstItem="ZCp-2l-fmO" firstAttribute="centerX" secondItem="4EG-QI-0Eh" secondAttribute="centerX" type="default" id="KAA-n6-PDI"/>
+                            <constraint firstItem="ZCp-2l-fmO" firstAttribute="centerX" secondItem="4EG-QI-0Eh" secondAttribute="centerX" type="default" id="DdF-ry-hz0"/>
+                            <constraint firstAttribute="bottom" secondItem="ZCp-2l-fmO" secondAttribute="bottom" constant="98" id="IqP-QB-n9U"/>
+                            <constraint firstItem="ZCp-2l-fmO" firstAttribute="centerX" secondItem="QDN-ac-iTU" secondAttribute="centerX" type="default" id="Urj-Bm-jrv"/>
                             <constraint firstAttribute="trailing" secondItem="QDN-ac-iTU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cHZ-gc-5H2"/>
-                            <constraint firstItem="4EG-QI-0Eh" firstAttribute="centerX" secondItem="QDN-ac-iTU" secondAttribute="centerX" type="default" id="xD3-EE-6XL"/>
                             <constraint firstAttribute="bottom" secondItem="4EG-QI-0Eh" secondAttribute="bottom" constant="185" id="xxK-Q2-SoD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="quoteOpt" destination="ZCp-2l-fmO" id="b6i-7D-Aix"/>
                         <outlet property="quoteText" destination="QDN-ac-iTU" id="cR3-pp-lqV"/>
                     </connections>
                 </viewController>
