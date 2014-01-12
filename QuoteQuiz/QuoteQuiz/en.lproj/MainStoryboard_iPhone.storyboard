@@ -26,14 +26,97 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="zHP-Ek-Tou">
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-UA-npF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TVK-pA-3fA"/>
+                                    <constraint firstAttribute="width" constant="37" id="VZJ-fT-dU3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="zJR-h3-l1t">
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dEZ-4v-Xcf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1s-nN-vfG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="alx-bd-wXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Answer 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="235" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-1h-mJl">
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zEB-Oo-wGO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYt-Mc-BAc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cqo-a4-F6a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="rkF-Dr-Ujf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0Ix-El-SYb"/>
-                            <constraint firstItem="T9Y-ih-nJ0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="39" id="DNX-Rr-iN5"/>
-                            <constraint firstItem="rkF-Dr-Ujf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="OV2-Tb-TUk"/>
-                            <constraint firstItem="rkF-Dr-Ujf" firstAttribute="centerX" secondItem="T9Y-ih-nJ0" secondAttribute="centerX" type="default" id="VLI-L0-uH1"/>
-                            <constraint firstItem="rkF-Dr-Ujf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="148" id="vcT-Bi-3Ws"/>
+                            <constraint firstItem="gYt-Mc-BAc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4Yh-Le-QAg"/>
+                            <constraint firstItem="I1s-nN-vfG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6Ej-9n-CRi"/>
+                            <constraint firstItem="FRP-1h-mJl" firstAttribute="leading" secondItem="gYt-Mc-BAc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="B5W-fN-QCh"/>
+                            <constraint firstAttribute="trailing" secondItem="zJR-h3-l1t" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Btl-EQ-XEh"/>
+                            <constraint firstItem="zHP-Ek-Tou" firstAttribute="top" secondItem="rkF-Dr-Ujf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FBc-Nf-QsY"/>
+                            <constraint firstAttribute="trailing" secondItem="zHP-Ek-Tou" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FyB-Cc-eis"/>
+                            <constraint firstItem="I1s-nN-vfG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="206" id="GQu-jd-C1m"/>
+                            <constraint firstItem="zJR-h3-l1t" firstAttribute="leading" secondItem="I1s-nN-vfG" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Q2T-nV-ZnX"/>
+                            <constraint firstItem="FRP-1h-mJl" firstAttribute="top" secondItem="3" secondAttribute="top" constant="264" id="TjU-PW-tsN"/>
+                            <constraint firstItem="iVb-UA-npF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UUc-pO-6QO"/>
+                            <constraint firstAttribute="trailing" secondItem="FRP-1h-mJl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VsR-wW-n8f"/>
+                            <constraint firstItem="zHP-Ek-Tou" firstAttribute="baseline" secondItem="iVb-UA-npF" secondAttribute="baseline" type="default" id="WRr-LK-aKp"/>
+                            <constraint firstItem="zHP-Ek-Tou" firstAttribute="leading" secondItem="iVb-UA-npF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Xfa-lf-bG5"/>
+                            <constraint firstItem="FRP-1h-mJl" firstAttribute="leading" secondItem="zJR-h3-l1t" secondAttribute="leading" type="default" id="abK-tB-Woj"/>
+                            <constraint firstItem="rkF-Dr-Ujf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cpx-ev-Y8q"/>
+                            <constraint firstItem="T9Y-ih-nJ0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dbI-0A-HcX"/>
+                            <constraint firstItem="rkF-Dr-Ujf" firstAttribute="top" secondItem="T9Y-ih-nJ0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gaI-Mj-1W8"/>
+                            <constraint firstItem="zJR-h3-l1t" firstAttribute="leading" secondItem="zHP-Ek-Tou" secondAttribute="leading" type="default" id="goT-dk-cFL"/>
+                            <constraint firstItem="rkF-Dr-Ujf" firstAttribute="centerX" secondItem="T9Y-ih-nJ0" secondAttribute="centerX" type="default" id="hYt-s1-cv9"/>
+                            <constraint firstItem="gYt-Mc-BAc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="265" id="lxL-Yt-Eb0"/>
+                            <constraint firstItem="zJR-h3-l1t" firstAttribute="top" secondItem="zHP-Ek-Tou" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rFx-Lh-zq8"/>
+                            <constraint firstItem="iVb-UA-npF" firstAttribute="bottom" secondItem="zHP-Ek-Tou" secondAttribute="bottom" type="default" id="scJ-sN-1tZ"/>
+                            <constraint firstAttribute="trailing" secondItem="rkF-Dr-Ujf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tZg-gg-VpB"/>
+                            <constraint firstItem="iVb-UA-npF" firstAttribute="top" secondItem="rkF-Dr-Ujf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="z4A-7I-Gu5"/>
                         </constraints>
                     </view>
                 </viewController>
