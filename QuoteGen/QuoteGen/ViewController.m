@@ -35,6 +35,11 @@
     NSString *plistCatPath = [[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"plist"];
     self.movieQuotes= [NSMutableArray arrayWithContentsOfFile:plistCatPath];
     
+    // 3 - Select quote opt
+    //NSArray *itemArray = [NSArray arrayWithObjects: @"Classic", @"Modern", @"Mine", nil];
+    //UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:itemArray];
+    //segmentedControl.selectedSegmentIndex = 2;
+    //self.quoteOpt = segmentedControl;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,19 +48,81 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)quoteButtonTapped:(id)sender {
-    // 1 - Get number of rows in array
-    //int array_tot = [self.myQuotes count];
-    int array_tot = [self.movieQuotes count];
-    // 2 - Get random index
-    int index = (arc4random() % array_tot);
-    // 3 - Get the quote string for the index
-    //NSString *my_quote = self.myQuotes[index];
-    NSString *my_quote = self.movieQuotes[index][@"quote"];
-    NSString *my_film = self.movieQuotes[index][@"source"];
-    NSString *my_category = self.movieQuotes[index][@"category"];
-    // 4 - Display the quote in the text view
-    self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n \"%@\" \n\n Film : %@ \n\n Category : %@",  my_quote, my_film, my_category];
+-(IBAction)segmentedControlIndexChanged:(id)sender {
+    
+    NSLog(@"segmentedControlIndexChanged");
+    
+    switch (_quoteOpt.selectedSegmentIndex)
+    {
+        case 0:
+        {
+            NSLog(@"dateSegmentActive");
+        }
+            break;
+        case 1:
+        {
+            NSLog(@"noteSegmentActive");
+        }
+            break;
+        case 2:
+        {
+            NSLog(@"typeSegmentActive");
+        }
+            break;
+        case 3:
+        {
+            NSLog(@"userIDSegmentActive");
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(IBAction)quoteButtonTapped:(id)sender
+{
+    // 1 - Get personal quotes when the final segment is selected
+    if (self.quoteOpt.selectedSegmentIndex == 2)
+    {
+        // 1.1 - Get number of rows in array
+        int array_tot = [self.myQuotes count];
+        // 1.2 - Get random index
+        int index = (arc4random() % array_tot);
+        // 1.3 - Get the quote string for the index
+        NSString *my_quote = self.myQuotes[index];
+        // 1.4 - Display the quote in the text view
+        self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  my_quote];
+    }
+    // 2 - Get movie quotes
+    else
+    {
+        // 2.1 - determine category
+        NSString *selectedCategory = @"classic";
+        if (self.quoteOpt.selectedSegmentIndex == 1)
+        {
+            selectedCategory = @"modern";
+        }
+        // 2.2 - filter array by category using predicate
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"category == %@", selectedCategory];
+        NSArray *filteredArray = [self.movieQuotes filteredArrayUsingPredicate:predicate];
+        // 2.3 - get total number in filtered array
+        int array_tot = [filteredArray count];
+        // 2.4 - as a safeguard only get quote when the array has rows in it
+        if (array_tot > 0)
+        {
+            // 2.5 - get random index
+            int index = (arc4random() % array_tot);
+            // 2.6 - get the quote string for the index
+            NSString *quote = filteredArray[index][@"quote"];
+            NSString *movie = filteredArray[index][@"source"];
+            self.quoteText.text = [NSString stringWithFormat:@"Movie \"%@\" \n\nFilm : %@",  quote, movie];
+        }
+        else
+        {
+            self.quoteText.text = [NSString stringWithFormat:@"No quotes to display."];
+        }
+    }
 }
 
 @end

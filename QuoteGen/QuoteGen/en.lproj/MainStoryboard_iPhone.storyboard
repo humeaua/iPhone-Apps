@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-QI-0Eh">
@@ -33,13 +33,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="ZCp-2l-fmO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="qyI-oL-olf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Classic"/>
+                                    <segment title="Modern"/>
+                                    <segment title="Mine"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlIndexChanged:" destination="2" eventType="valueChanged" id="tr0-TO-tUK"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZCp-2l-fmO" secondAttribute="bottom" constant="91" id="1YK-H3-XZK"/>
                             <constraint firstItem="QDN-ac-iTU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" id="4k1-Tj-4tV"/>
                             <constraint firstItem="QDN-ac-iTU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="631-Cu-WS0"/>
+                            <constraint firstItem="ZCp-2l-fmO" firstAttribute="centerX" secondItem="4EG-QI-0Eh" secondAttribute="centerX" type="default" id="KAA-n6-PDI"/>
                             <constraint firstAttribute="trailing" secondItem="QDN-ac-iTU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="cHZ-gc-5H2"/>
-                            <constraint firstItem="QDN-ac-iTU" firstAttribute="centerX" secondItem="4EG-QI-0Eh" secondAttribute="centerX" type="default" id="h2t-ij-4FO"/>
+                            <constraint firstItem="4EG-QI-0Eh" firstAttribute="centerX" secondItem="QDN-ac-iTU" secondAttribute="centerX" type="default" id="xD3-EE-6XL"/>
                             <constraint firstAttribute="bottom" secondItem="4EG-QI-0Eh" secondAttribute="bottom" constant="185" id="xxK-Q2-SoD"/>
                         </constraints>
                     </view>
@@ -60,6 +75,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="quoteButtonTapped:"/>
+                <relationship kind="action" name="segmentedControlIndexChanged:"/>
+                <relationship kind="outlet" name="quoteOpt" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="quoteText" candidateClass="UITextView"/>
             </relationships>
         </class>
@@ -67,6 +84,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
