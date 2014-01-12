@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+@class Quiz;
+
 @interface ViewController ()
 
 @end
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad
 {
+    self.quizIndex = 999;
+    self.quiz = [[Quiz alloc] initWithQuiz:@"quotes"];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
