@@ -190,4 +190,13 @@
     [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"TipModal"]) {
+        QuizTipViewController * detailViewController = (QuizTipViewController *) segue.destinationViewController;
+        detailViewController.delegate = self;
+        detailViewController.tipText = self.quiz.tip;
+    }
+}
+
 @end
