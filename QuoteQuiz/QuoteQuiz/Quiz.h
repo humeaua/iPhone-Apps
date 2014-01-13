@@ -23,4 +23,7 @@
 -(void) nextQuestion: (NSUInteger) idx;
 -(BOOL) checkQuestion: (NSUInteger) question forAnswer: (NSUInteger) answer;
 
+@property (nonatomic, assign) NSInteger tipCount;
+@property (nonatomic, strong) NSString * tip;
+
 @end

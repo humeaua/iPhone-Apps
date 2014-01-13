@@ -107,30 +107,53 @@
     self.answer1Button.hidden = NO;
     self.answer2Button.hidden = NO;
     self.answer3Button.hidden = NO;
+    
+    if (self.quiz.tipCount < 3)
+    {
+        self.infoButton.hidden = NO;
+    }
+    else
+    {
+        self.infoButton.hidden = YES;
+    }
 }
 
 - (void)checkAnswer
 {
-    if ([self.quiz checkQuestion:self.quizIndex forAnswer:_answer]) {
-        if (self.answer == 1) {
+    if ([self.quiz checkQuestion:self.quizIndex forAnswer:_answer])
+    {
+        if (self.answer == 1)
+        {
             self.answer1Label.backgroundColor = [UIColor greenColor];
-        } else if (self.answer == 2) {
+        }
+        else if (self.answer == 2)
+        {
             self.answer2Label.backgroundColor = [UIColor greenColor];
-        } else if (self.answer == 3) {
+        }
+        else if (self.answer == 3)
+        {
             self.answer3Label.backgroundColor = [UIColor greenColor];
         }
-    } else {
-        if (self.answer == 1) {
+    }
+    else
+    {
+        if (self.answer == 1)
+        {
             self.answer1Label.backgroundColor = [UIColor redColor];
-        } else if (self.answer == 2) {
+        }
+        else if (self.answer == 2)
+        {
             self.answer2Label.backgroundColor = [UIColor redColor];
-        } else if (self.answer == 3) {
+        }
+        else if (self.answer == 3)
+        {
             self.answer3Label.backgroundColor = [UIColor redColor];
         }
     }
     
     self.statusLabel.text = [NSString stringWithFormat:@"Correct: %d Incorrect: %d",self.quiz.correctCount, self.quiz.incorrectCount];
     
+    //  Remove the button so that we cannot click anymore
     self.answer1Button.hidden = YES;
     self.answer2Button.hidden = YES;
     self.answer3Button.hidden = YES;
