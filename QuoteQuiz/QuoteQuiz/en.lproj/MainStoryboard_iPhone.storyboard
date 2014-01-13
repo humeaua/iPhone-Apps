@@ -119,6 +119,15 @@
                             <constraint firstItem="iVb-UA-npF" firstAttribute="top" secondItem="rkF-Dr-Ujf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="z4A-7I-Gu5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="iVb-UA-npF" id="WKD-El-lhR"/>
+                        <outlet property="answer1Label" destination="zHP-Ek-Tou" id="XbI-qy-7oN"/>
+                        <outlet property="answer2Button" destination="I1s-nN-vfG" id="44Z-er-SLi"/>
+                        <outlet property="answer2Label" destination="zJR-h3-l1t" id="zvh-by-Mdy"/>
+                        <outlet property="answer3Button" destination="gYt-Mc-BAc" id="Cmy-8a-Cmg"/>
+                        <outlet property="answer3Label" destination="FRP-1h-mJl" id="8jz-sE-McG"/>
+                        <outlet property="questionLabel" destination="rkF-Dr-Ujf" id="o5j-4M-75u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,6 +139,21 @@
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="answer1Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answer1Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="answer2Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answer2Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="answer3Button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="answer3Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="movie1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="movie2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="movie3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="questionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
