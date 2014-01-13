@@ -186,4 +186,8 @@
     [self nextQuizItem];
 }
 
+- (void)quizTipDidFinish:(QuizTipViewController *) controller {
+    [self dismissViewControllerAnimated:YES completion:^{}];
+}
+
 @end

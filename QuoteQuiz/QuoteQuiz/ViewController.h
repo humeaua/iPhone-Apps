@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Quiz.h"
 
-@interface ViewController : UIViewController
+#import "QuizTipViewController.h"
+
+@interface ViewController : UIViewController<QuizTipViewControllerDelegate>
 
 - (IBAction)ans1Action:(id)sender;
 - (IBAction)ans2Action:(id)sender;

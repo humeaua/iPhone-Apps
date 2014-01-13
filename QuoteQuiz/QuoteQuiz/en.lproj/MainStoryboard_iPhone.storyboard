@@ -103,7 +103,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyO-7G-wMh">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="5fT-cR-fLy"/>
                                     <constraint firstAttribute="width" constant="119" id="zdT-KX-xHs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -118,12 +117,25 @@
                                     <action selector="startAgain:" destination="2" eventType="touchUpInside" id="e8o-Tw-mTJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aD6-h2-lMi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Jf8-y4-vCi"/>
+                                    <constraint firstAttribute="width" constant="119" id="bom-xw-03O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Tip">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gYt-Mc-BAc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4Yh-Le-QAg"/>
                             <constraint firstItem="I1s-nN-vfG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6Ej-9n-CRi"/>
-                            <constraint firstAttribute="bottom" secondItem="HyO-7G-wMh" secondAttribute="bottom" constant="41" id="7fa-E1-alw"/>
                             <constraint firstItem="I1s-nN-vfG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="259" id="8lj-1q-63V"/>
                             <constraint firstItem="FRP-1h-mJl" firstAttribute="leading" secondItem="gYt-Mc-BAc" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="B5W-fN-QCh"/>
                             <constraint firstAttribute="trailing" secondItem="zJR-h3-l1t" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Btl-EQ-XEh"/>
@@ -131,17 +143,20 @@
                             <constraint firstAttribute="trailing" secondItem="zHP-Ek-Tou" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FyB-Cc-eis"/>
                             <constraint firstItem="vz5-Ux-boX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GOt-Ug-tJy"/>
                             <constraint firstItem="iVb-UA-npF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="200" id="H0E-L6-RtH"/>
+                            <constraint firstItem="aD6-h2-lMi" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="JvF-qV-Dua"/>
                             <constraint firstItem="zJR-h3-l1t" firstAttribute="leading" secondItem="I1s-nN-vfG" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Q2T-nV-ZnX"/>
                             <constraint firstItem="gYt-Mc-BAc" firstAttribute="bottom" secondItem="FRP-1h-mJl" secondAttribute="bottom" type="default" id="QWK-we-CY0"/>
                             <constraint firstItem="iVb-UA-npF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="UUc-pO-6QO"/>
                             <constraint firstAttribute="trailing" secondItem="FRP-1h-mJl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VsR-wW-n8f"/>
                             <constraint firstItem="zHP-Ek-Tou" firstAttribute="baseline" secondItem="iVb-UA-npF" secondAttribute="baseline" type="default" id="WRr-LK-aKp"/>
                             <constraint firstItem="zHP-Ek-Tou" firstAttribute="leading" secondItem="iVb-UA-npF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Xfa-lf-bG5"/>
+                            <constraint firstItem="aD6-h2-lMi" firstAttribute="bottom" secondItem="HyO-7G-wMh" secondAttribute="bottom" type="default" id="Z9Y-I9-Lgo"/>
                             <constraint firstItem="FRP-1h-mJl" firstAttribute="leading" secondItem="zJR-h3-l1t" secondAttribute="leading" type="default" id="abK-tB-Woj"/>
                             <constraint firstItem="rkF-Dr-Ujf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cpx-ev-Y8q"/>
                             <constraint firstItem="T9Y-ih-nJ0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dbI-0A-HcX"/>
                             <constraint firstAttribute="bottom" secondItem="gYt-Mc-BAc" secondAttribute="bottom" constant="95" id="dix-rj-5ZH"/>
                             <constraint firstAttribute="trailing" secondItem="HyO-7G-wMh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="etL-mL-mKh"/>
+                            <constraint firstAttribute="bottom" secondItem="aD6-h2-lMi" secondAttribute="bottom" constant="41" id="gTf-eZ-qK0"/>
                             <constraint firstItem="rkF-Dr-Ujf" firstAttribute="top" secondItem="T9Y-ih-nJ0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gaI-Mj-1W8"/>
                             <constraint firstItem="zJR-h3-l1t" firstAttribute="top" secondItem="3" secondAttribute="top" constant="258" id="ghX-oE-azf"/>
                             <constraint firstItem="zJR-h3-l1t" firstAttribute="leading" secondItem="zHP-Ek-Tou" secondAttribute="leading" type="default" id="goT-dk-cFL"/>
@@ -149,6 +164,7 @@
                             <constraint firstItem="rkF-Dr-Ujf" firstAttribute="centerX" secondItem="T9Y-ih-nJ0" secondAttribute="centerX" type="default" id="hYt-s1-cv9"/>
                             <constraint firstItem="vz5-Ux-boX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="154" id="iLj-UY-qw7"/>
                             <constraint firstItem="iVb-UA-npF" firstAttribute="top" secondItem="zHP-Ek-Tou" secondAttribute="top" type="default" id="kYj-U3-cmG"/>
+                            <constraint firstItem="aD6-h2-lMi" firstAttribute="top" secondItem="HyO-7G-wMh" secondAttribute="top" type="default" id="pn7-mc-XZ9"/>
                             <constraint firstAttribute="trailing" secondItem="rkF-Dr-Ujf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="tZg-gg-VpB"/>
                         </constraints>
                     </view>
@@ -159,6 +175,7 @@
                         <outlet property="answer2Label" destination="zJR-h3-l1t" id="zvh-by-Mdy"/>
                         <outlet property="answer3Button" destination="gYt-Mc-BAc" id="Cmy-8a-Cmg"/>
                         <outlet property="answer3Label" destination="FRP-1h-mJl" id="8jz-sE-McG"/>
+                        <outlet property="infoButton" destination="aD6-h2-lMi" id="NIl-TH-wYl"/>
                         <outlet property="questionLabel" destination="rkF-Dr-Ujf" id="o5j-4M-75u"/>
                         <outlet property="startButton" destination="HyO-7G-wMh" id="1vH-XN-20r"/>
                         <outlet property="statusLabel" destination="vz5-Ux-boX" id="urc-s5-Hva"/>
@@ -167,10 +184,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Quiz Tip View Controller-->
+        <scene sceneID="bv3-Xf-5Xn">
+            <objects>
+                <viewController id="bHY-AU-J7x" customClass="QuizTipViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SvS-sb-jbn">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Movie tip (3 tip only)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcZ-BS-gDC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXO-K8-un6">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="Sdd-e6-pMY"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1X-hG-4mW">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G1X-hG-4mW" firstAttribute="leading" secondItem="SvS-sb-jbn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="GeU-OD-aZh"/>
+                            <constraint firstAttribute="trailing" secondItem="G1X-hG-4mW" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="OTf-po-zNC"/>
+                            <constraint firstItem="qXO-K8-un6" firstAttribute="centerX" secondItem="mcZ-BS-gDC" secondAttribute="centerX" type="default" id="XBJ-c2-Sns"/>
+                            <constraint firstItem="qXO-K8-un6" firstAttribute="leading" secondItem="SvS-sb-jbn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="boz-Th-Pks"/>
+                            <constraint firstItem="mcZ-BS-gDC" firstAttribute="top" secondItem="SvS-sb-jbn" secondAttribute="top" constant="99" id="kaP-cE-OPI"/>
+                            <constraint firstAttribute="bottom" secondItem="G1X-hG-4mW" secondAttribute="bottom" constant="199" id="qQf-oJ-3aI"/>
+                            <constraint firstAttribute="trailing" secondItem="qXO-K8-un6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vyS-1c-few"/>
+                            <constraint firstItem="qXO-K8-un6" firstAttribute="top" secondItem="SvS-sb-jbn" secondAttribute="top" constant="151" id="ys3-xD-W2I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tipView" destination="qXO-K8-un6" id="fb1-tB-hCV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeV-pH-xwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="49"/>
+        </scene>
     </scenes>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="QuizTipViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuizTipViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneAction:"/>
+                <relationship kind="outlet" name="tipView" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
