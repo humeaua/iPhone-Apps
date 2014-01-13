@@ -11,6 +11,11 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)ans1Action:(id)sender;
+- (IBAction)ans2Action:(id)sender;
+- (IBAction)ans3Action:(id)sender;
+- (IBAction)startAgain:(id)sender;
+
 @property (nonatomic, assign) NSInteger quizIndex;
 @property (nonatomic, strong) Quiz * quiz;
 

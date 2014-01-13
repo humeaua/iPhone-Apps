@@ -56,6 +56,16 @@
 - (void)quizDone
 {
     // More later
+    if (self.quiz.correctCount)
+    {
+        self.statusLabel.text = [NSString stringWithFormat:@"Quiz Done - Score %d%%", self.quiz.quizCount / self.quiz.correctCount];
+    }
+    else
+    {
+        self.statusLabel.text = @"Quiz Done - Score: 0%";
+    }
+    [self.startButton setTitle:@"Try Again" forState:UIControlStateNormal];
+    self.quizIndex = 999;
 }
 
 - (void)nextQuizItem
@@ -97,6 +107,60 @@
     self.answer1Button.hidden = NO;
     self.answer2Button.hidden = NO;
     self.answer3Button.hidden = NO;
+}
+
+- (void)checkAnswer
+{
+    if ([self.quiz checkQuestion:self.quizIndex forAnswer:_answer]) {
+        if (self.answer == 1) {
+            self.answer1Label.backgroundColor = [UIColor greenColor];
+        } else if (self.answer == 2) {
+            self.answer2Label.backgroundColor = [UIColor greenColor];
+        } else if (self.answer == 3) {
+            self.answer3Label.backgroundColor = [UIColor greenColor];
+        }
+    } else {
+        if (self.answer == 1) {
+            self.answer1Label.backgroundColor = [UIColor redColor];
+        } else if (self.answer == 2) {
+            self.answer2Label.backgroundColor = [UIColor redColor];
+        } else if (self.answer == 3) {
+            self.answer3Label.backgroundColor = [UIColor redColor];
+        }
+    }
+    
+    self.statusLabel.text = [NSString stringWithFormat:@"Correct: %d Incorrect: %d",self.quiz.correctCount, self.quiz.incorrectCount];
+    
+    self.answer1Button.hidden = YES;
+    self.answer2Button.hidden = YES;
+    self.answer3Button.hidden = YES;
+    
+    self.startButton.hidden = NO;
+    
+    [self.startButton setTitle:@"Next" forState:UIControlStateNormal];
+}
+
+- (IBAction)ans1Action:(id)sender
+{
+    self.answer = 1;
+    [self checkAnswer];
+}
+
+- (IBAction)ans2Action:(id)sender
+{
+    self.answer = 2;
+    [self checkAnswer];
+}
+
+- (IBAction)ans3Action:(id)sender
+{
+    self.answer = 3;
+    [self checkAnswer];
+}
+
+- (IBAction)startAgain:(id)sender
+{
+    [self nextQuizItem];
 }
 
 @end
